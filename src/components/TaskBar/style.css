@@ -1,0 +1,21 @@
+.box {
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    height: 22px;
+    margin-top: 3px;
+    position: relative;
+    background-color: #EEFFFF;
+    text-align: center;
+    font-size: x-small;
+}
+.innerBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(153,255,255,0.4);
+    background-clip: padding-box;
+    height: 22px;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border: none;
+}

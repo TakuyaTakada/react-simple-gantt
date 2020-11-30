@@ -1,0 +1,20 @@
+.day {
+    text-align: center;
+}
+.days {
+    display: flex;
+    flex-direction: row;
+}
+.month {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: solid;
+    border-right-width: 1px;
+    border-color: gray;
+}
+.timeline {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}

@@ -1,0 +1,69 @@
+.main {
+    overflow: scroll;
+    height: 140px;
+    border-top: solid;
+    border-top-color: gray;
+    border-top-width: 1px;
+}
+.headerRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.headerCol {
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: gray;
+    text-align: center;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    resize: horizontal;
+    overflow: auto;
+}
+.timelineCol {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+}
+.dataRow {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    font-size: small;
+}
+.dataRow:hover {
+    background-color: #f0f8ff;
+}
+.data {
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: gray;
+    text-align: center;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    height: 30px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.data:hover {
+    background-color: #f0f8ff;
+}
