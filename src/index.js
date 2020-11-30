@@ -8,7 +8,7 @@ import TaskBar from "./components/TaskBar/TaskBar";
 
 dayjs.extend(timezone);
 
-const SimpleGantt = ({ tasks, viewMode, handleClick, height, headerWidth }) => {
+const SimpleGantt = ({ tasks, viewMode, onClick, height, headerWidth }) => {
     const { ref } = useDimensions();
     const [taskWidth, setTaskWidth] = useState(
         headerWidth ? headerWidth : 140
@@ -65,7 +65,7 @@ const SimpleGantt = ({ tasks, viewMode, handleClick, height, headerWidth }) => {
                                     <td
                                         className="data"
                                         style={{ width: taskWidth }}
-                                        onClick={handleClick ? () => handleClick(task) : () =>  console.log(task)}
+                                        onClick={onClick ? () => onClick(task) : () =>  console.log(task)}
                                     >
                                         {task.name}
                                     </td>

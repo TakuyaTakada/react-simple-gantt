@@ -6,7 +6,7 @@ import { tasks } from "./const";
 const App = () => {
     const [viewMode, setViewMode] = useState("Day");
     const [selectedTask, setSelectedTask] = useState(null);
-    const onClick = (task) => {
+    const handleClick = (task) => {
         setSelectedTask(<p>{task.name} clicked</p>)
     }
     return (
@@ -37,7 +37,7 @@ const App = () => {
             />
             <label>Month</label>
             <br/>
-            <SimpleGantt tasks={tasks} viewMode={viewMode} handleClick={onClick}/>
+            <SimpleGantt tasks={tasks} viewMode={viewMode} onClick={handleClick}/>
             {selectedTask}
         </div>
     )

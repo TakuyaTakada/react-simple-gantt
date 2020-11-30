@@ -1,6 +1,6 @@
 {
   "name": "react-simple-gantt",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "scripts": {
     "transpile": "babel src -d dist --copy-files",
